@@ -1,7 +1,5 @@
 const router = require('express').Router();
 
-const cubes = require('../db.json');
-
 const cubeServices = require('../services/cubeServices');
 
 router.get('/create', (req, res) => {
@@ -20,7 +18,9 @@ router.post('/create', async (req, res) => {
 });
 
 router.get('/details/:id', (req, res) => {
-    res.render('details');
+    const cube = cubeServices.getOne(req.params.id);
+
+    res.render('details', { cube });
 });
 
 module.exports = router
