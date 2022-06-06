@@ -43,5 +43,53 @@
     "description": "asd",
     "imageUrl": "https://alqurumresort.com/img/which-is-one-of-the-oldest-theaters-in-central-america.jpg",
     "difficultyLevel": "6"
+  },
+  {
+    "0": {
+      "id": 0,
+      "name": "Gan356 Air SM",
+      "imageUrl": "https://ae01.alicdn.com/kf/HTB1CSddXRxRMKJjy0Fdq6yifFXa6/Gan-356-Air-SM-3x3-Black-Magic-cube-GAN-Air-SM-Magnetic-3x3x3-Speed-cube-gans.jpg",
+      "difficultyLevel": 3
+    },
+    "1": {
+      "id": 1,
+      "name": "Eco-Dark",
+      "imageUrl": "https://thingsidesire.com/wp-content/uploads/2018/06/Eco-Dark-Rubik%E2%80%99s-Cube2.jpg",
+      "difficultyLevel": 3
+    },
+    "2": {
+      "id": 2,
+      "name": "Pyraminx",
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/61izOzq%2BBAL._SY355_.jpg",
+      "difficultyLevel": 1
+    },
+    "3": {
+      "id": 3,
+      "name": "Megaminx",
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/61HpQqVQ37L._SY355_.jpg",
+      "difficultyLevel": 3
+    },
+    "4": {
+      "id": 4,
+      "name": "clasic cube",
+      "description": "clasic",
+      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.E8L6y7AkxpdVqMrzA1zTWQHaEk%26pid%3DApi&f=1",
+      "difficultyLevel": "3"
+    },
+    "5": {
+      "id": 5,
+      "name": "aa",
+      "description": "a",
+      "imageUrl": "https://pulpcovers.com/wp-content/uploads/2011/12/35453467-6471387801_7201422064_o1.jpg",
+      "difficultyLevel": "1"
+    },
+    "6": {
+      "id": 6,
+      "name": "asd",
+      "description": "asd",
+      "imageUrl": "https://alqurumresort.com/img/which-is-one-of-the-oldest-theaters-in-central-america.jpg",
+      "difficultyLevel": "6"
+    },
+    "id": 7
   }
 ]
