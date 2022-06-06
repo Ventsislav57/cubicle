@@ -3,11 +3,19 @@ const path = require('path');
 
 const cubes = require('../db.json');
 
+exports.getAll = (search, from, to) => {
+    const result = cubes.filter(x => x.name.toUpperCase().includes(search.toUpperCase()));
+
+    return result
+};
+
 exports.getOne = (cubeId) => cubes[cubeId];
 
 exports.save = (cube) => {
-    cubes.push({id: cubes[cubes.length - 1].id + 1, ...cubes});
 
-    let textData = JSON.stringify(cubes, '', 2);
+    cubes.push({id: cubes[cubes.length - 1].id + 1, ...cube});
+
+    let textData = JSON.stringify(cubes, '', 4);
+
     return fs.writeFile(path.resolve('src', 'db.json'), textData, { encoding: 'utf-8' });
 }
