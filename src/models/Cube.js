@@ -3,15 +3,14 @@ const mongoose = require('mongoose');
 
 const cubeSchema = new mongoose.Schema({
 
-    _id: mongoose.Types.ObjectId,
     name: {
         type: String,
-        required: true
+        required: true,
     },
     description: {
         type: String,
         required: true,
-        maxlength: 150
+        maxlength: 150,
     },
     imageUrl: {
         type: String,
@@ -21,7 +20,7 @@ const cubeSchema = new mongoose.Schema({
         type: Number,
         required: true,
         min: 1,
-        max: 6
+        max: 6,
     }
 
 });
@@ -31,6 +30,6 @@ cubeSchema.path('imageUrl').validate(function () {
 }, 'Wrong imageUrl!');
 
 
-const Cube = mongoose.Schema('Cube', cubeSchema);
+const Cube = mongoose.model('Cube', cubeSchema);
 
 module.exports = Cube;
