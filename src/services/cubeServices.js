@@ -9,7 +9,7 @@ exports.getAll = (search = '', from = 0, to = 6) => {
     .filter(x => x.name.toLowerCase().includes(search.toLowerCase()))
     .filter(x => x.difficultyLevel >= from && x.difficultyLevel <= to);
 
-    return result
+    return result;
 };
 
 exports.getOne = (cubeId) => cubes[cubeId];
