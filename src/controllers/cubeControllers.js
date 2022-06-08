@@ -17,10 +17,14 @@ router.post('/create', async (req, res) => {
     }
 });
 
-router.get('/details/:id', async (req, res) => {
+router.get('/details/:cubeId', async (req, res) => {
     const cube = await cubeServices.getOne(req.params.id).lean();
 
     res.render('details', { cube });
+});
+
+router.get('/attach-accessory/:cubeId', (req, res) => {
+    res.render('accessory/attach');
 });
 
 module.exports = router
