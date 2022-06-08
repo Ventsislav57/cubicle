@@ -10,7 +10,8 @@ exports.getAll = async (search = '', from = 0, to = 6) => {
     // .filter(x => x.difficultyLevel >= from && x.difficultyLevel <= to);
 };
 
-exports.getOne = (cubeId) => Cube.findById(cubeId);
+
+exports.getOne = (cubeId) => Cube.findById(cubeId).populate('accessories');
 
 exports.create = (cube) => Cube.create(cube);
 
