@@ -62,6 +62,9 @@ main {
 div.container {
     display: block;
 }
+div.accessories h3 {
+    text-align: center;
+}
 
 h1 {
     text-align: center;
@@ -97,10 +100,10 @@ button, main a.btn {
     text-decoration: none;
     display: inline-block;
     font-size: 18px;
-    width: 43%;
+    width: 39%;
     margin: 12px;
-    margin-left: 6%;
-    border-radius: 4px;
+    margin-left: 4%;
+    border-radius: 20px;
     background: #607588;
     color: white;
 }
@@ -124,6 +127,7 @@ div.details {
     background-color: #f3f3f2;
     padding: 1em;
 }
+
 
 span {
     font-weight: bolder;
@@ -201,6 +205,9 @@ div.form {
     padding: 20px;
     width: 36%;
     margin: auto;
+}
+div.form h3 {
+    text-align: center;
 }
 
 span.error {
